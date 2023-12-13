@@ -146,9 +146,11 @@ class LoginScreen extends StatelessWidget {
                       TextStyle(color: Colors.grey, fontWeight: FontWeight.w500),
                   children: <TextSpan>[
                     TextSpan(
-                        text: 'Create Account Here',
-                        style: TextStyle(
-                            color: Colors.orange, fontWeight: FontWeight.w500)),
+                      text: 'Create Account Here',
+                      style: TextStyle(
+                        color: Colors.orange, fontWeight: FontWeight.w500
+                      )
+                    ),
                   ],
                 ),
               ),
