@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:minifurs_app/screens/ForgetPasswordScreen.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -104,12 +105,7 @@ class LoginScreen extends StatelessWidget {
                   alignment: AlignmentDirectional.topEnd,
                   child: InkWell(
                       onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const ForgetPasswordScreen()
-                          ),
-                        );
+                        Get.to(const ForgetPasswordScreen());
                       },
                     child: const Text("Forgot Password?")
                   )

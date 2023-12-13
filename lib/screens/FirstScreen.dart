@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:minifurs_app/screens/LoginScreen.dart';
 import 'package:minifurs_app/screens/SignupScreen.dart';
     
@@ -35,10 +36,7 @@ class FirstScreen extends StatelessWidget {
                   
                 ),
                 onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const LoginScreen()),
-                  );
+                 Get.to(const LoginScreen());
                 },
                 child: const Text("Login", style: TextStyle(color: Colors.white, fontWeight: FontWeight.w600, fontSize: 20.0),)
               ),
@@ -56,10 +54,7 @@ class FirstScreen extends StatelessWidget {
                   
                 ),
                 onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => SignupScreen()),
-                  );
+                  Get.to(const SignupScreen());
                 },
                 child: const Text("Sign Up", style: TextStyle(color: Colors.orange, fontWeight: FontWeight.w600, fontSize: 20.0),)
               ),
